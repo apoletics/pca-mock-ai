@@ -618,5 +618,666 @@
             "D": "Set up service discovery"
         },
         "answer": "A"
+    },
+    {
+        "question": "Which parameter controls how long Prometheus retains metric data?",
+        "options": {
+            "A": "scrape_interval",
+            "B": "retention_time",
+            "C": "storage.tsdb.retention.time",
+            "D": "metric_ttl"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What does the `label_replace()` function in PromQL do?",
+        "options": {
+            "A": "Removes labels from time series",
+            "B": "Creates new labels based on existing label values",
+            "C": "Filters time series by label values",
+            "D": "Counts distinct label values"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which service discovery mechanism uses DNS records to find targets?",
+        "options": {
+            "A": "Kubernetes SD",
+            "B": "DNS SD",
+            "C": "File SD",
+            "D": "Consul SD"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the default port for the Node Exporter?",
+        "options": {
+            "A": "9100",
+            "B": "9090",
+            "C": "9093",
+            "D": "8080"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which Alertmanager configuration parameter defines where to send notifications?",
+        "options": {
+            "A": "route",
+            "B": "receivers",
+            "C": "group_by",
+            "D": "inhibit_rules"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What type of metric should you use to track the number of failed login attempts?",
+        "options": {
+            "A": "Gauge",
+            "B": "Counter",
+            "C": "Histogram",
+            "D": "Summary"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which PromQL function calculates the number of unique label values for a metric?",
+        "options": {
+            "A": "count_values()",
+            "B": "label_count()",
+            "C": "unique_labels()",
+            "D": "distinct_count()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of the `inhibit_rules` in Alertmanager?",
+        "options": {
+            "A": "To prevent certain alerts from firing if other alerts are active",
+            "B": "To group similar alerts together",
+            "C": "To route alerts to specific receivers",
+            "D": "To set the severity level of alerts"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which service discovery method uses a static configuration file?",
+        "options": {
+            "A": "Kubernetes SD",
+            "B": "File SD",
+            "C": "EC2 SD",
+            "D": "DNS SD"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the `quantile()` function in PromQL calculate?",
+        "options": {
+            "A": "The average value of a metric",
+            "B": "A specific percentile of a metric's distribution",
+            "C": "The sum of values over time",
+            "D": "The rate of change of a counter"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which parameter controls how often Prometheus evaluates alerting rules?",
+        "options": {
+            "A": "evaluation_interval",
+            "B": "scrape_interval",
+            "C": "alert_interval",
+            "D": "rule_interval"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the primary purpose of the Blackbox exporter?",
+        "options": {
+            "A": "To monitor host-level metrics",
+            "B": "To perform active checks on network endpoints",
+            "C": "To export database metrics",
+            "D": "To collect container metrics"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which PromQL operator is used for pattern matching on label values?",
+        "options": {
+            "A": "=~",
+            "B": "==",
+            "C": "=!",
+            "D": "!="
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of the `group_by` parameter in Alertmanager?",
+        "options": {
+            "A": "To group alerts by time of occurrence",
+            "B": "To group alerts by severity",
+            "C": "To group alerts by label values",
+            "D": "To group alerts by receiver"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which metric type would you use to track the current temperature of a server?",
+        "options": {
+            "A": "Counter",
+            "B": "Gauge",
+            "C": "Histogram",
+            "D": "Summary"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the `rate()` function do when applied to a gauge metric?",
+        "options": {
+            "A": "Calculates the per-second rate of change",
+            "B": "Returns an error",
+            "C": "Treats the gauge as a counter",
+            "D": "Calculates the average value"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which configuration option enables Prometheus to federate metrics from other Prometheus instances?",
+        "options": {
+            "A": "federation_config",
+            "B": "remote_read",
+            "C": "scrape_configs with honor_labels",
+            "D": "federate_from"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the default port for Alertmanager?",
+        "options": {
+            "A": "9090",
+            "B": "9093",
+            "C": "9094",
+            "D": "9100"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which PromQL function combines multiple time series into one by adding their values?",
+        "options": {
+            "A": "merge()",
+            "B": "sum()",
+            "C": "concat()",
+            "D": "add()"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the `keep_dropped_targets` parameter in Prometheus?",
+        "options": {
+            "A": "To retain metrics from targets that have been dropped",
+            "B": "To keep track of targets that failed relabeling",
+            "C": "To store configuration history of dropped targets",
+            "D": "To prevent targets from being removed"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which exporter would you use to monitor Redis instances?",
+        "options": {
+            "A": "Node exporter",
+            "B": "Redis exporter",
+            "C": "MySQL exporter",
+            "D": "Blackbox exporter"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the `offset` modifier do in PromQL?",
+        "options": {
+            "A": "Shifts the time range of the query backwards",
+            "B": "Filters results by time",
+            "C": "Changes the evaluation interval",
+            "D": "Offsets label values"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which Alertmanager parameter sets the maximum time to wait before sending a notification?",
+        "options": {
+            "A": "group_wait",
+            "B": "group_interval",
+            "C": "repeat_interval",
+            "D": "send_delay"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the recommended naming convention for counter metrics?",
+        "options": {
+            "A": "*-counter",
+            "B": "count_*",
+            "C": "*_total",
+            "D": "total_*"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which PromQL function calculates the number of time series matching a selector?",
+        "options": {
+            "A": "count()",
+            "B": "count_series()",
+            "C": "series_count()",
+            "D": "num_series()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of the `remote_read` configuration in Prometheus?",
+        "options": {
+            "A": "To send metrics to external storage",
+            "B": "To read metrics from external storage",
+            "C": "To replicate configuration to other instances",
+            "D": "To federate with other Prometheus servers"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which service discovery mechanism is appropriate for AWS EC2 instances?",
+        "options": {
+            "A": "Kubernetes SD",
+            "B": "EC2 SD",
+            "C": "File SD",
+            "D": "DNS SD"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the `delta()` function calculate in PromQL?",
+        "options": {
+            "A": "The difference between the first and last value in a range",
+            "B": "The average value over a range",
+            "C": "The rate of change per second",
+            "D": "The sum of values over a range"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which Alertmanager receiver type sends notifications via email?",
+        "options": {
+            "A": "slack_configs",
+            "B": "email_configs",
+            "C": "pagerduty_configs",
+            "D": "webhook_configs"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is cardinality in the context of Prometheus metrics?",
+        "options": {
+            "A": "The number of metrics stored",
+            "B": "The number of unique label combinations",
+            "C": "The size of each metric sample",
+            "D": "The frequency of metric collection"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which PromQL function is used to calculate the average value over a time range?",
+        "options": {
+            "A": "avg()",
+            "B": "mean()",
+            "C": "avg_over_time()",
+            "D": "mean_over_time()"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the purpose of the `prometheus_operator_` metrics?",
+        "options": {
+            "A": "To monitor the Prometheus Operator itself",
+            "B": "To monitor Kubernetes clusters",
+            "C": "To monitor application performance",
+            "D": "To monitor Alertmanager instances"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which parameter in a scrape configuration defines the HTTP path to scrape metrics from?",
+        "options": {
+            "A": "path",
+            "B": "metrics_path",
+            "C": "scrape_path",
+            "D": "target_path"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the `label_join()` function do in PromQL?",
+        "options": {
+            "A": "Combines multiple labels into a single label",
+            "B": "Splits a label into multiple labels",
+            "C": "Filters time series by label combinations",
+            "D": "Counts the number of labels"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which Alertmanager configuration parameter determines how often to send notifications for active alerts?",
+        "options": {
+            "A": "group_wait",
+            "B": "group_interval",
+            "C": "repeat_interval",
+            "D": "notification_interval"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What type of metric would you use to track request latency distributions?",
+        "options": {
+            "A": "Counter",
+            "B": "Gauge",
+            "C": "Histogram",
+            "D": "Summary"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which PromQL operator performs a logical NOT on a label matcher?",
+        "options": {
+            "A": "!",
+            "B": "NOT",
+            "C": "!~",
+            "D": "^"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of the `scrape_configs` section in Prometheus configuration?",
+        "options": {
+            "A": "To define alerting rules",
+            "B": "To configure which targets to scrape for metrics",
+            "C": "To set up remote storage",
+            "D": "To configure Alertmanager integration"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which exporter is used to monitor PostgreSQL databases?",
+        "options": {
+            "A": "MySQL exporter",
+            "B": "PostgreSQL exporter",
+            "C": "Database exporter",
+            "D": "SQL exporter"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the `increase()` function calculate in PromQL?",
+        "options": {
+            "A": "The total increase in a counter over a time range",
+            "B": "The per-second rate of increase",
+            "C": "The maximum value in a range",
+            "D": "The average value in a range"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which Alertmanager parameter defines the root route for alert processing?",
+        "options": {
+            "A": "route",
+            "B": "root_route",
+            "C": "default_route",
+            "D": "primary_route"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the recommended way to handle high cardinality labels?",
+        "options": {
+            "A": "Avoid them when possible",
+            "B": "Use them for all labels",
+            "C": "Store them as separate metrics",
+            "D": "Encrypt them"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function calculates the maximum value over a time range?",
+        "options": {
+            "A": "max()",
+            "B": "max_over_time()",
+            "C": "peak()",
+            "D": "highest()",
+            "D": "highest()"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the `metric_relabel_configs` in a scrape configuration?",
+        "options": {
+            "A": "To relabel targets before scraping",
+            "B": "To relabel metrics after scraping",
+            "C": "To configure service discovery",
+            "D": "To set alerting thresholds"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which service discovery mechanism is appropriate for Docker containers?",
+        "options": {
+            "A": "Docker SD",
+            "B": "Kubernetes SD",
+            "C": "File SD",
+            "D": "EC2 SD"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the `irate()` function do in PromQL?",
+        "options": {
+            "A": "Calculates an instant rate using the last two samples",
+            "B": "Calculates a rate over a longer time period",
+            "C": "Calculates the average rate over a range",
+            "D": "Calculates the maximum rate in a range"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which Alertmanager receiver type sends notifications to Slack?",
+        "options": {
+            "A": "email_configs",
+            "B": "slack_configs",
+            "C": "pagerduty_configs",
+            "D": "webhook_configs"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the `summary` metric type?",
+        "options": {
+            "A": "To track cumulative counts",
+            "B": "To track current values",
+            "C": "To track distributions with pre-calculated quantiles",
+            "D": "To track histograms with configurable buckets"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which PromQL operator is used for exact label matching?",
+        "options": {
+            "A": "=~",
+            "B": "!~",
+            "C": "=",
+            "D": "!="
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the purpose of the `storage.tsdb.path` configuration parameter?",
+        "options": {
+            "A": "To set the path for configuration files",
+            "B": "To set the path for storing time series data",
+            "C": "To set the path for log files",
+            "D": "To set the path for alert rules"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which exporter would you use to monitor HTTP endpoints for availability?",
+        "options": {
+            "A": "Node exporter",
+            "B": "Blackbox exporter",
+            "C": "HTTP exporter",
+            "D": "Web exporter"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the `topk()` function do in PromQL?",
+        "options": {
+            "A": "Returns the top k time series by value",
+            "B": "Returns the top k percent of values",
+            "C": "Returns the k highest values over time",
+            "D": "Returns the k most recent values"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which Alertmanager parameter sets the time to wait before sending a notification for a new group of alerts?",
+        "options": {
+            "A": "group_wait",
+            "B": "group_interval",
+            "C": "repeat_interval",
+            "D": "group_delay"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the `job` label automatically added by Prometheus?",
+        "options": {
+            "A": "To identify the scrape job that collected the metric",
+            "B": "To identify the target instance",
+            "C": "To identify the metric type",
+            "D": "To identify the severity level"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function calculates the standard deviation over a time range?",
+        "options": {
+            "A": "stddev()",
+            "B": "stddev_over_time()",
+            "C": "deviation()",
+            "D": "variance()"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the `kubernetes_sd_configs` in Prometheus?",
+        "options": {
+            "A": "To discover targets in a Kubernetes cluster",
+            "B": "To monitor the Prometheus Operator",
+            "C": "To configure Kubernetes alerts",
+            "D": "To store Kubernetes metrics"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which parameter in a scrape configuration sets the maximum time to wait for a scrape to complete?",
+        "options": {
+            "A": "scrape_timeout",
+            "B": "timeout",
+            "C": "scrape_deadline",
+            "D": "max_scrape_time"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the `histogram_quantile()` function require as input?",
+        "options": {
+            "A": "A counter metric",
+            "B": "A gauge metric",
+            "C": "A histogram metric",
+            "D": "A summary metric"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which Alertmanager receiver type sends notifications to PagerDuty?",
+        "options": {
+            "A": "email_configs",
+            "B": "slack_configs",
+            "C": "pagerduty_configs",
+            "D": "webhook_configs"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the recommended approach for metric naming?",
+        "options": {
+            "A": "Use short abbreviations",
+            "B": "Be descriptive and include units where applicable",
+            "C": "Use camelCase",
+            "D": "Include the metric type in the name"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which PromQL function is used to calculate the number of unique values for a label?",
+        "options": {
+            "A": "count_values()",
+            "B": "unique_count()",
+            "C": "label_count()",
+            "D": "distinct_values()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of the `alert_relabel_configs` in Prometheus?",
+        "options": {
+            "A": "To relabel alerts before sending to Alertmanager",
+            "B": "To relabel metrics used in alerts",
+            "C": "To configure alerting rules",
+            "D": "To set alert severity levels"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which service discovery mechanism uses Consul for service discovery?",
+        "options": {
+            "A": "Consul SD",
+            "B": "Kubernetes SD",
+            "C": "DNS SD",
+            "D": "File SD"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the `vector()` function do in PromQL?",
+        "options": {
+            "A": "Converts a scalar to a vector",
+            "B": "Converts a vector to a scalar",
+            "C": "Filters a vector by time",
+            "D": "Aggregates a vector"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which parameter controls the number of samples Prometheus keeps in memory?",
+        "options": {
+            "A": "storage.tsdb.memory_samples",
+            "B": "memory_limit",
+            "C": "sample_cache_size",
+            "D": "storage.memory_limit"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of the JMX exporter?",
+        "options": {
+            "A": "To monitor Java applications via JMX",
+            "B": "To monitor web applications",
+            "C": "To monitor network devices",
+            "D": "To monitor container orchestration platforms"
+        },
+        "answer": "A"
     }
 ]
