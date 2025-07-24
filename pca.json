@@ -2173,7 +2173,7 @@
     {
         "question": "Which PromQL function returns the number of unique label combinations across time series?",
         "options": {
-            "A": 'count({__name__=~".+"})',
+            "A": "count({__name__='~.+'})",
             "B": "label_cardinality()",
             "C": "unique_series_count()",
             "D": "series_count()"
