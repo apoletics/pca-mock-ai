@@ -2569,5 +2569,625 @@
             "D": "WAL segments marked for truncation"
         },
         "answer": "A"
+    },
+    {
+        "question": "Which service discovery mechanism is used for DigitalOcean Droplets?",
+        "options": {
+            "A": "DigitalOcean SD",
+            "B": "DO Droplet SD",
+            "C": "Cloud Droplet SD",
+            "D": "Ocean SD"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the `prometheus_tsdb_index_version` metric indicate?",
+        "options": {
+            "A": "Version of the TSDB index format in use",
+            "B": "Number of index updates performed",
+            "C": "Size of the index on disk",
+            "D": "Time since last index compaction"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function calculates the skewness of values over time?",
+        "options": {
+            "A": "skew()",
+            "B": "skew_over_time()",
+            "C": "skewness()",
+            "D": "skewness_over_time()"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of `alertmanager_silence_creation_total` metric?",
+        "options": {
+            "A": "Total number of silences created",
+            "B": "Active silences currently applied",
+            "C": "Silences that have expired",
+            "D": "Failed silence creation attempts"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which exporter monitors Envoy proxies?",
+        "options": {
+            "A": "Proxy exporter",
+            "B": "Envoy exporter",
+            "C": "Service mesh exporter",
+            "D": "Envoy proxy exporter"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does `storage.tsdb.block-reprocess-interval` control?",
+        "options": {
+            "A": "Interval for reprocessing old blocks",
+            "B": "Time between block rotations",
+            "C": "Frequency of block verification",
+            "D": "Delay before blocks are compacted"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function calculates the kurtosis over time?",
+        "options": {
+            "A": "kurtosis()",
+            "B": "kurtosis_over_time()",
+            "C": "kurt()",
+            "D": "kurt_over_time()"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the effect of `matchers: [{name: 'severity', value: 'critical'}]` in an Alertmanager route?",
+        "options": {
+            "A": "Routes only critical severity alerts",
+            "B": "Sets severity to critical for all alerts",
+            "C": "Excludes critical alerts from this route",
+            "D": "Groups critical alerts separately"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which service discovery mechanism is used for OpenShift resources?",
+        "options": {
+            "A": "OpenShift SD",
+            "B": "Kubernetes SD with OpenShift annotations",
+            "C": "OCP SD",
+            "D": "Red Hat SD"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the `prometheus_tsdb_head_chunk_range_seconds` metric measure?",
+        "options": {
+            "A": "Time range covered by in-memory chunks",
+            "B": "Size of chunks in the head block",
+            "C": "Interval between chunk rotations",
+            "D": "Compression ratio of chunks"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function calculates the cumulative sum over time?",
+        "options": {
+            "A": "cumsum_over_time()",
+            "B": "cumulative_sum_over_time()",
+            "C": "sum_cumulative_over_time()",
+            "D": "running_sum_over_time()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of `templates` in Alertmanager configuration?",
+        "options": {
+            "A": "Customize notification message formats",
+            "B": "Define alert routing logic",
+            "C": "Configure service discovery templates",
+            "D": "Set up metric relabeling patterns"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which exporter monitors Consul service mesh?",
+        "options": {
+            "A": "Consul exporter",
+            "B": "Service mesh exporter",
+            "C": "Consul mesh exporter",
+            "D": "HashiCorp exporter"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does `storage.tsdb.index-version` configure?",
+        "options": {
+            "A": "TSDB index format version",
+            "B": "Frequency of index updates",
+            "C": "Index compression algorithm",
+            "D": "Maximum size of the index"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function identifies the most frequent label value in a vector?",
+        "options": {
+            "A": "mode()",
+            "B": "most_frequent()",
+            "C": "topk(1, count_values(...))",
+            "D": "frequency()"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is a 'silence' in Alertmanager?",
+        "options": {
+            "A": "A temporary suppression of specific alerts",
+            "B": "A permanent filter for unwanted alerts",
+            "C": "A delay in notification delivery",
+            "D": "A debug mode for alert evaluation"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which service discovery mechanism uses DNS TXT records for metadata?",
+        "options": {
+            "A": "DNS SD with TXT records",
+            "B": "TXT SD",
+            "C": "Metadata DNS SD",
+            "D": "Text record SD"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the `prometheus_target_metadata_cache_duration_seconds` metric track?",
+        "options": {
+            "A": "Time target metadata is cached",
+            "B": "Duration to fetch target metadata",
+            "C": "Interval between metadata refreshes",
+            "D": "Metadata storage size"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function calculates the exponential moving average with a specified window?",
+        "options": {
+            "A": "ema_over_time()",
+            "B": "exponential_avg_over_time()",
+            "C": "holt_winters() with trend=0",
+            "D": "moving_avg_exponential_over_time()"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the purpose of `alertmanager_cluster_gossip_messages_total`?",
+        "options": {
+            "A": "Total gossip messages between cluster members",
+            "B": "Alerts shared between cluster instances",
+            "C": "Configuration updates propagated via gossip",
+            "D": "Failed cluster communication attempts"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which parameter configures the TSDB block wal buffer size?",
+        "options": {
+            "A": "storage.tsdb.wal-buffer-size",
+            "B": "tsdb.wal.buffer.size",
+            "C": "storage.wal.buffer.size",
+            "D": "tsdb.block.wal.buffer"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the primary use of the `label_regex()` function in PromQL?",
+        "options": {
+            "A": "Filtering time series by label regex",
+            "B": "Extracting substrings from labels into new labels",
+            "C": "Counting labels matching a regex",
+            "D": "Replacing label values with regex patterns"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which exporter monitors Envoy proxy metrics?",
+        "options": {
+            "A": "Proxy exporter",
+            "B": "Envoy exporter",
+            "C": "Service mesh exporter",
+            "D": "Istio exporter"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the `alertmanager_silence_duration_seconds` metric track?",
+        "options": {
+            "A": "Duration of active silences",
+            "B": "Time since last silence was created",
+            "C": "Total time alerts have been silenced",
+            "D": "Minimum silence duration configured"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function calculates the sum of squares of differences from the mean over time?",
+        "options": {
+            "A": "sum_sq_diff_over_time()",
+            "B": "variance_sum_over_time()",
+            "C": "squared_deviation_sum_over_time()",
+            "D": "mean_sq_diff_over_time()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the effect of `cluster.gossip-interval` in Alertmanager?",
+        "options": {
+            "A": "Interval between gossip messages",
+            "B": "Delay before syncing configuration",
+            "C": "Frequency of cluster health checks",
+            "D": "Time to wait for cluster consensus"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which service discovery mechanism is used for DigitalOcean Kubernetes clusters?",
+        "options": {
+            "A": "DigitalOcean Kubernetes SD",
+            "B": "Kubernetes SD with DigitalOcean provider",
+            "C": "DOKS SD",
+            "D": "Cloud Kubernetes SD"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the `prometheus_tsdb_head_max_chunk_age_seconds` metric measure?",
+        "options": {
+            "A": "Maximum age of chunks in the head block",
+            "B": "Time until chunks are flushed to disk",
+            "C": "Lifespan of compacted blocks",
+            "D": "Retention period for in-memory chunks"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function calculates the interquartile range over time?",
+        "options": {
+            "A": "iqr_over_time()",
+            "B": "quantile_range_over_time()",
+            "C": "interquartile_over_time()",
+            "D": "range_quantile_over_time()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of `alertmanager_notification_template_files`?",
+        "options": {
+            "A": "Paths to notification template files",
+            "B": "Templates for alert rule definitions",
+            "C": "Service discovery configuration templates",
+            "D": "Label relabeling pattern files"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which exporter monitors Kafka Connect clusters?",
+        "options": {
+            "A": "Kafka Connect exporter",
+            "B": "Connect exporter",
+            "C": "Kafka connector exporter",
+            "D": "Stream processor exporter"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does `storage.tsdb.memory-chunks` configure?",
+        "options": {
+            "A": "Maximum number of in-memory chunks",
+            "B": "Memory allocated to chunk storage",
+            "C": "Chunk compression level",
+            "D": "Number of chunks per block"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function identifies the longest consecutive increase in a counter?",
+        "options": {
+            "A": "max_increase_streak()",
+            "B": "longest_increase_over_time()",
+            "C": "increase_streak_length()",
+            "D": "consecutive_increases_over_time()"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the effect of `cluster.tls_config` in Alertmanager?",
+        "options": {
+            "A": "Enables TLS for cluster communication",
+            "B": "Encrypts alert notifications",
+            "C": "Secures the Alertmanager UI with TLS",
+            "D": "Verifies Prometheus server certificates"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which service discovery mechanism is used for Linode instances?",
+        "options": {
+            "A": "Linode SD",
+            "B": "Cloud SD with Linode provider",
+            "C": "Linode Instance SD",
+            "D": "VPS SD"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the `prometheus_tsdb_read_requests_total` metric track?",
+        "options": {
+            "A": "Total TSDB read operations",
+            "B": "PromQL query requests",
+            "C": "Remote read requests",
+            "D": "Block decompression operations"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function calculates the number of non-null values over time?",
+        "options": {
+            "A": "count_non_null_over_time()",
+            "B": "non_null_count_over_time()",
+            "C": "not_null_over_time()",
+            "D": "valid_samples_over_time()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of `alertmanager_silence_matchers`?",
+        "options": {
+            "A": "Label matchers defining which alerts to silence",
+            "B": "Silences that match current alerts",
+            "C": "Number of alerts matched by silences",
+            "D": "Silences that have expired but still match alerts"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which parameter configures the TSDB index page size?",
+        "options": {
+            "A": "storage.tsdb.index-page-size",
+            "B": "tsdb.index.page.size",
+            "C": "storage.index.page.size",
+            "D": "tsdb.page.size.index"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the primary use of the `label_count()` function in PromQL?",
+        "options": {
+            "A": "Counting the number of labels on a time series",
+            "B": "Counting time series with a specific label",
+            "C": "Counting distinct values for a label",
+            "D": "Counting label matches for a regex"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which exporter monitors Caddy web servers?",
+        "options": {
+            "A": "Caddy exporter",
+            "B": "Web server exporter",
+            "C": "Caddy metrics exporter",
+            "D": "HTTP server exporter"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the `prometheus_tsdb_compaction_objects_removed_total` metric track?",
+        "options": {
+            "A": "Number of objects removed during compaction",
+            "B": "Blocks deleted after compaction",
+            "C": "Bytes freed by compaction",
+            "D": "Failed compaction attempts"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function calculates the mean absolute deviation over time?",
+        "options": {
+            "A": "mad_over_time()",
+            "B": "mean_abs_deviation_over_time()",
+            "C": "abs_deviation_mean_over_time()",
+            "D": "average_deviation_over_time()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of `alertmanager_notification_configs`?",
+        "options": {
+            "A": "Defining receiver-specific notification settings",
+            "B": "Configuring global notification defaults",
+            "C": "Setting up alert routing rules",
+            "D": "Specifying silence conditions"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which service discovery mechanism uses Nomad for job discovery?",
+        "options": {
+            "A": "Nomad SD",
+            "B": "Job SD",
+            "C": "HashiCorp SD",
+            "D": "Orchestrator SD"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does `storage.tsdb.wal-fsync-interval` configure?",
+        "options": {
+            "A": "Maximum time between WAL fsyncs",
+            "B": "Minimum time between WAL fsyncs",
+            "C": "Timeout for WAL fsync operations",
+            "D": "Interval between WAL segment rotations"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function calculates the sum of absolute differences from the median over time?",
+        "options": {
+            "A": "mad_over_time()",
+            "B": "median_abs_deviation_over_time()",
+            "C": "abs_diff_median_over_time()",
+            "D": "sum_abs_median_diff_over_time()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of `alertmanager_cluster_peer_timeout`?",
+        "options": {
+            "A": "Timeout for cluster peer communication",
+            "B": "Time to wait for peer acknowledgment",
+            "C": "Interval between peer health checks",
+            "D": "Time to retain peer information after failure"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which parameter configures the maximum number of concurrent TSDB compactions?",
+        "options": {
+            "A": "storage.tsdb.max-concurrent-compactions",
+            "B": "tsdb.compaction.concurrent.max",
+            "C": "storage.compaction.concurrent.limit",
+            "D": "max_concurrent_compactions"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the primary use of `label_prefix()` in PromQL?",
+        "options": {
+            "A": "Adding a prefix to label names",
+            "B": "Filtering labels by prefix",
+            "C": "Extracting prefixes from label values",
+            "D": "Counting labels with a specific prefix"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which exporter monitors Traefik reverse proxies?",
+        "options": {
+            "A": "Traefik exporter",
+            "B": "Proxy exporter",
+            "C": "Reverse proxy exporter",
+            "D": "Ingress exporter"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the `prometheus_target_scrape_series_added` metric track?",
+        "options": {
+            "A": "New time series added from scrapes",
+            "B": "Total series scraped per target",
+            "C": "Series removed after scraping",
+            "D": "Duplicate series dropped during scraping"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function calculates the cumulative maximum over time?",
+        "options": {
+            "A": "cummax_over_time()",
+            "B": "cumulative_max_over_time()",
+            "C": "max_cumulative_over_time()",
+            "D": "running_max_over_time()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of `alertmanager_silence_start_time`?",
+        "options": {
+            "A": "Start timestamp of active silences",
+            "B": "Time when silence was created",
+            "C": "Duration since silence became active",
+            "D": "Scheduled start time for future silences"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which service discovery mechanism is used for Packet (Equinix Metal) instances?",
+        "options": {
+            "A": "Packet SD",
+            "B": "Equinix SD",
+            "C": "Metal SD",
+            "D": "Cloud Instance SD"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does `storage.tsdb.index-cache-compression` configure?",
+        "options": {
+            "A": "Enables compression for index cache",
+            "B": "Sets compression level for index files",
+            "C": "Configures cache size for compressed indexes",
+            "D": "Disables compression for in-memory indexes"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function calculates the cumulative minimum over time?",
+        "options": {
+            "A": "cummin_over_time()",
+            "B": "cumulative_min_over_time()",
+            "C": "min_cumulative_over_time()",
+            "D": "running_min_over_time()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the effect of `alertmanager_cluster_peer_sync_interval`?",
+        "options": {
+            "A": "Interval for syncing state between cluster peers",
+            "B": "Time to wait for full cluster sync",
+            "C": "Frequency of configuration checks",
+            "D": "Delay before syncing new alerts"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which parameter configures the TSDB block write concurrency?",
+        "options": {
+            "A": "storage.tsdb.write-concurrency",
+            "B": "tsdb.block.write.concurrency",
+            "C": "storage.write.concurrency",
+            "D": "tsdb.write.concurrent.limit"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the primary use of `label_suffix()` in PromQL?",
+        "options": {
+            "A": "Adding a suffix to label names",
+            "B": "Filtering labels by suffix",
+            "C": "Extracting suffixes from label values",
+            "D": "Renaming labels with a suffix"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which exporter monitors Nginx Ingress controllers?",
+        "options": {
+            "A": "Nginx Ingress exporter",
+            "B": "Ingress controller exporter",
+            "C": "Kubernetes Ingress exporter",
+            "D": "NGINX controller exporter"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the `prometheus_tsdb_wal_writes_total` metric track?",
+        "options": {
+            "A": "Total number of WAL write operations",
+            "B": "Bytes written to WAL",
+            "C": "WAL segments created",
+            "D": "WAL write errors"
+        },
+        "answer": "A"
     }
 ]
