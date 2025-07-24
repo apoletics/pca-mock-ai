@@ -1909,7 +1909,7 @@
             "D": "Summary"
         },
         "answer": "C"
-    }，
+    },
     {
         "question": "Which service discovery mechanism is used for Google Cloud Platform instances?",
         "options": {
