@@ -1,0 +1,622 @@
+[
+    {
+        "question": "What is the primary purpose of Prometheus' exposition format?",
+        "options": {
+            "A": "To store metrics in a relational database",
+            "B": "To standardize how metrics are exposed by targets",
+            "C": "To encrypt metric data during transmission",
+            "D": "To aggregate metrics across multiple instances"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which PromQL function calculates the per-second rate of a counter metric?",
+        "options": {
+            "A": "avg()",
+            "B": "rate()",
+            "C": "sum()",
+            "D": "increase()"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the `relabel_configs` section in Prometheus configuration control?",
+        "options": {
+            "A": "Alert routing rules",
+            "B": "Metric storage retention",
+            "C": "Target selection and label manipulation",
+            "D": "Dashboard visualization settings"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which component handles alert routing and deduplication in Prometheus?",
+        "options": {
+            "A": "Prometheus server",
+            "B": "Alertmanager",
+            "C": "Grafana",
+            "D": "Pushgateway"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the default web port for Prometheus?",
+        "options": {
+            "A": "9090",
+            "B": "9093",
+            "C": "8080",
+            "D": "8088"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which metric type tracks the current value of a resource (e.g., CPU usage)?",
+        "options": {
+            "A": "Counter",
+            "B": "Gauge",
+            "C": "Histogram",
+            "D": "Summary"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "How does Prometheus primarily collect metrics from targets?",
+        "options": {
+            "A": "Push-based model",
+            "B": "Pull-based model",
+            "C": "Hybrid push-pull model",
+            "D": "File-based ingestion"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the `scrape_interval` parameter in Prometheus configuration?",
+        "options": {
+            "A": "Defines how often Prometheus scrapes targets",
+            "B": "Sets the retention period for metrics",
+            "C": "Configures alerting evaluation frequency",
+            "D": "Controls service discovery refresh rate"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function is used to calculate quantiles from histogram metrics?",
+        "options": {
+            "A": "histogram_quantile()",
+            "B": "quantile()",
+            "C": "rate_quantile()",
+            "D": "percentile()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the `repeat_interval` parameter in Alertmanager configuration control?",
+        "options": {
+            "A": "How often alerts are re-evaluated",
+            "B": "The delay before sending repeated alerts for the same condition",
+            "C": "The time to wait before grouping alerts",
+            "D": "The maximum time to retain alert history"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which tool helps applications expose Prometheus-compatible metrics?",
+        "options": {
+            "A": "Node exporter",
+            "B": "Client libraries",
+            "C": "Blackbox exporter",
+            "D": "Grafana"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the Pushgateway in Prometheus?",
+        "options": {
+            "A": "To store long-term metric data",
+            "B": "To allow short-lived jobs to push metrics",
+            "C": "To visualize metrics in dashboards",
+            "D": "To route alerts to external systems"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is NOT a valid Prometheus metric type?",
+        "options": {
+            "A": "Counter",
+            "B": "Gauge",
+            "C": "Timer",
+            "D": "Summary"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the role of `service discovery` in Prometheus?",
+        "options": {
+            "A": "Automatically detect and add targets for scraping",
+            "B": "Route alerts to appropriate teams",
+            "C": "Aggregate metrics across multiple instances",
+            "D": "Store metric data in a distributed database"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL operator is used to perform arithmetic operations on time series?",
+        "options": {
+            "A": "Logical operators",
+            "B": "Binary operators",
+            "C": "Aggregation operators",
+            "D": "Regex operators"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the `group_wait` parameter in Alertmanager configuration control?",
+        "options": {
+            "A": "The time to wait before grouping alerts",
+            "B": "The delay before sending repeated alerts",
+            "C": "The maximum time to retain alert history",
+            "D": "The time to wait before resolving alerts"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which exporter is commonly used to collect host-level metrics (CPU, memory, disk)?",
+        "options": {
+            "A": "Node exporter",
+            "B": "MySQL exporter",
+            "C": "Redis exporter",
+            "D": "Blackbox exporter"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of `metric_relabel_configs` in Prometheus?",
+        "options": {
+            "A": "Modify labels after metrics are scraped",
+            "B": "Filter targets before scraping",
+            "C": "Configure alerting rules",
+            "D": "Aggregate metrics across instances"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which of the following is a valid Prometheus metric name?",
+        "options": {
+            "A": "http_requests_total",
+            "B": "HTTP.Requests.Total",
+            "C": "HttpRequestCount",
+            "D": "requests_total"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the `alertmanager_config` section in Prometheus configuration specify?",
+        "options": {
+            "A": "Alerting rules",
+            "B": "Alertmanager endpoint URL",
+            "C": "Scraping targets",
+            "D": "Dashboard templates"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which PromQL function calculates the derivative of a gauge metric over time?",
+        "options": {
+            "A": "deriv()",
+            "B": "delta()",
+            "C": "rate()",
+            "D": "increase()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the primary use case for the Pushgateway?",
+        "options": {
+            "A": "Long-running services with static endpoints",
+            "B": "Short-lived jobs that cannot be scraped",
+            "C": "High-throughput streaming data",
+            "D": "Real-time log aggregation"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is part of Prometheus' data model?",
+        "options": {
+            "A": "Tables and rows",
+            "B": "Metrics and labels",
+            "C": "Documents and fields",
+            "D": "Queues and topics"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the `external_labels` section in Prometheus configuration add to all metrics?",
+        "options": {
+            "A": "Static labels for identifying the Prometheus instance",
+            "B": "Dynamic labels based on target metadata",
+            "C": "Alerting severity labels",
+            "D": "Dashboard visualization labels"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function is used to filter time series based on label values?",
+        "options": {
+            "A": "label_replace()",
+            "B": "label_values()",
+            "C": "label_join()",
+            "D": "label_match()"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the `rule_files` section in Prometheus configuration?",
+        "options": {
+            "A": "Define alerting rules",
+            "B": "Configure service discovery",
+            "C": "Set up remote write endpoints",
+            "D": "Manage dashboard templates"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which metric type is best suited for tracking the number of HTTP requests over time?",
+        "options": {
+            "A": "Counter",
+            "B": "Gauge",
+            "C": "Histogram",
+            "D": "Summary"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the `scrape_timeout` parameter in Prometheus configuration control?",
+        "options": {
+            "A": "The maximum time to wait for a scrape request",
+            "B": "The interval between scrapes",
+            "C": "The retention period for metrics",
+            "D": "The number of retries for failed scrapes"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which component is responsible for storing Prometheus metrics?",
+        "options": {
+            "A": "Alertmanager",
+            "B": "Prometheus server",
+            "C": "Grafana",
+            "D": "Remote write endpoint"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the `honor_labels` parameter in Prometheus configuration?",
+        "options": {
+            "A": "Use labels from the target instead of Prometheus' default labels",
+            "B": "Aggregate metrics across all labels",
+            "C": "Filter targets based on label values",
+            "D": "Add static labels to all metrics"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function calculates the sum of a metric over a time range?",
+        "options": {
+            "A": "sum_over_time()",
+            "B": "avg_over_time()",
+            "C": "max_over_time()",
+            "D": "min_over_time()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the primary function of the `remote_write` section in Prometheus configuration?",
+        "options": {
+            "A": "Send metrics to external storage systems",
+            "B": "Receive metrics from remote sources",
+            "C": "Route alerts to external services",
+            "D": "Configure service discovery for remote targets"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which exporter is used to monitor Kubernetes resources like pods and services?",
+        "options": {
+            "A": "Kube-state-metrics",
+            "B": "Node exporter",
+            "C": "Prometheus operator",
+            "D": "Blackbox exporter"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the `evaluation_interval` parameter in Prometheus configuration control?",
+        "options": {
+            "A": "How often alerting rules are evaluated",
+            "B": "The interval between scrapes",
+            "C": "The retention period for metrics",
+            "D": "The time to wait before resolving alerts"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL operator is used to combine metrics from different time series?",
+        "options": {
+            "A": "Logical OR",
+            "B": "Arithmetic addition",
+            "C": "Set operations",
+            "D": "Regex matching"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the purpose of the `alert` section in Prometheus rules files?",
+        "options": {
+            "A": "Define alerting conditions",
+            "B": "Configure alert routing",
+            "C": "Aggregate metrics for dashboards",
+            "D": "Set up service discovery"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which metric type is used to track the distribution of request durations?",
+        "options": {
+            "A": "Counter",
+            "B": "Gauge",
+            "C": "Histogram",
+            "D": "Summary"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What does the `source_labels` parameter in `relabel_configs` specify?",
+        "options": {
+            "A": "Labels to modify or filter",
+            "B": "Labels to add to the target",
+            "C": "Labels to remove from the target",
+            "D": "Labels to use for grouping alerts"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which component is used to visualize Prometheus metrics in dashboards?",
+        "options": {
+            "A": "Alertmanager",
+            "B": "Grafana",
+            "C": "Prometheus server",
+            "D": "Pushgateway"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the `job_name` parameter in Prometheus scrape configurations?",
+        "options": {
+            "A": "Group targets into logical jobs",
+            "B": "Define the name of the Prometheus instance",
+            "C": "Set the retention period for metrics",
+            "D": "Configure alerting rules"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function is used to calculate the rate of change over a sliding window?",
+        "options": {
+            "A": "rate()",
+            "B": "increase()",
+            "C": "delta()",
+            "D": "deriv()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the `action` parameter in `relabel_configs` control?",
+        "options": {
+            "A": "The type of relabeling operation to perform",
+            "B": "The labels to modify",
+            "C": "The regex pattern to match",
+            "D": "The replacement value for labels"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which exporter is used to monitor MySQL databases?",
+        "options": {
+            "A": "MySQL exporter",
+            "B": "Node exporter",
+            "C": "Redis exporter",
+            "D": "Blackbox exporter"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of the `external_url` parameter in Prometheus configuration?",
+        "options": {
+            "A": "Define the public URL for Prometheus",
+            "B": "Configure remote write endpoints",
+            "C": "Set up service discovery",
+            "D": "Route alerts to external services"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function is used to filter time series based on label existence?",
+        "options": {
+            "A": "label_values()",
+            "B": "label_names()",
+            "C": "count_values()",
+            "D": "count_by()"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the `for` parameter in alerting rules specify?",
+        "options": {
+            "A": "The duration an alert must be active before firing",
+            "B": "The interval between alert evaluations",
+            "C": "The retention period for alert history",
+            "D": "The severity level of the alert"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which metric type provides pre-aggregated summaries of data distributions?",
+        "options": {
+            "A": "Counter",
+            "B": "Gauge",
+            "C": "Histogram",
+            "D": "Summary"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "What is the purpose of the `honor_timestamps` parameter in Prometheus configuration?",
+        "options": {
+            "A": "Use timestamps from the target instead of Prometheus' server time",
+            "B": "Aggregate metrics across all timestamps",
+            "C": "Filter targets based on timestamp ranges",
+            "D": "Add static timestamps to all metrics"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which component is used to discover targets in a Kubernetes cluster?",
+        "options": {
+            "A": "Kubernetes service discovery",
+            "B": "Consul service discovery",
+            "C": "Zookeeper service discovery",
+            "D": "DNS service discovery"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of the `query_range` API endpoint in Prometheus?",
+        "options": {
+            "A": "Query metrics over a time range",
+            "B": "Query instant metrics",
+            "C": "Configure alerting rules",
+            "D": "Send metrics to remote storage"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function is used to calculate the minimum value over a time range?",
+        "options": {
+            "A": "min_over_time()",
+            "B": "max_over_time()",
+            "C": "avg_over_time()",
+            "D": "sum_over_time()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the `alertname` label in Prometheus alerts uniquely identify?",
+        "options": {
+            "A": "The alerting rule",
+            "B": "The target instance",
+            "C": "The severity level",
+            "D": "The alert state"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which metric type is used to track the number of active database connections?",
+        "options": {
+            "A": "Counter",
+            "B": "Gauge",
+            "C": "Histogram",
+            "D": "Summary"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the `sample_limit` parameter in Prometheus configuration?",
+        "options": {
+            "A": "Limit the number of samples per query",
+            "B": "Set the retention period for metrics",
+            "C": "Configure service discovery refresh rate",
+            "D": "Control the number of concurrent scrapes"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function is used to calculate the difference between two time series?",
+        "options": {
+            "A": "sub()",
+            "B": "add()",
+            "C": "mul()",
+            "D": "div()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the `state` field in Alertmanager notifications indicate?",
+        "options": {
+            "A": "The alert's current state (firing or resolved)",
+            "B": "The severity level of the alert",
+            "C": "The target instance affected by the alert",
+            "D": "The alerting rule name"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which metric type is used to track the number of items in a queue over time?",
+        "options": {
+            "A": "Counter",
+            "B": "Gauge",
+            "C": "Histogram",
+            "D": "Summary"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of the `alertmanager_notifier` component in Prometheus?",
+        "options": {
+            "A": "Send alerts to Alertmanager",
+            "B": "Aggregate metrics for dashboards",
+            "C": "Store metrics in remote storage",
+            "D": "Discover targets for scraping"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which PromQL function is used to calculate the rate of change over a specific time window?",
+        "options": {
+            "A": "rate()",
+            "B": "increase()",
+            "C": "delta()",
+            "D": "deriv()"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the `status` field in Prometheus alerts indicate?",
+        "options": {
+            "A": "The alert's current state (firing or pending)",
+            "B": "The severity level of the alert",
+            "C": "The target instance affected by the alert",
+            "D": "The alerting rule name"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which metric type is used to track the latency of HTTP requests?",
+        "options": {
+            "A": "Counter",
+            "B": "Gauge",
+            "C": "Histogram",
+            "D": "Summary"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the purpose of the `alertmanager_config` section in Prometheus rules files?",
+        "options": {
+            "A": "Configure Alertmanager endpoints",
+            "B": "Define alerting rules",
+            "C": "Aggregate metrics for dashboards",
+            "D": "Set up service discovery"
+        },
+        "answer": "A"
+    }
+]
