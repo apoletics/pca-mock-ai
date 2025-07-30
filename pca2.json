@@ -648,5 +648,606 @@
             "D": "The minimum interval between group evaluations"
         },
         "answer": "A"
+    },
+    {
+        "question": "Which PromQL function estimates the future value of a gauge based on linear regression?",
+        "options": {
+            "A": "predict_linear()",
+            "B": "forecast()",
+            "C": "linear_estimate()",
+            "D": "trend()",
+            "A": "predict_linear()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of the block_duration configuration in Prometheus TSDB?",
+        "options": {
+            "A": "How long to retain each block of data",
+            "B": "The time range covered by each data block",
+            "C": "How often to create a new block",
+            "D": "The maximum size of each block"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which metric type should you use to track the number of failed login attempts?",
+        "options": {
+            "A": "Gauge",
+            "B": "Counter",
+            "C": "Histogram",
+            "D": "Summary"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the route section in Alertmanager configuration define?",
+        "options": {
+            "A": "The network route to send alerts",
+            "B": "The hierarchy of alert routing to receivers",
+            "C": "The path for webhook notifications",
+            "D": "The route to Prometheus server"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which query calculates the per-second error rate for each service over the last 10 minutes?",
+        "options": {
+            "A": "sum(rate(http_requests_total{status=~\"5..\"}[10m])) by (service)",
+            "B": "rate(http_requests_total{status=~\"5..\"}[10m]) by (service)",
+            "C": "sum(http_requests_total{status=~\"5..\"}) by (service) / 600",
+            "D": "increase(http_requests_total{status=~\"5..\"}[10m]) by (service) / 600"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the effect of setting send_resolved: false in Alertmanager receiver configuration?",
+        "options": {
+            "A": "Prevents sending notifications when alerts are resolved",
+            "B": "Stops sending new alerts once they're resolved",
+            "C": "Sends resolved notifications only to secondary receivers",
+            "D": "Delays resolved notifications by the repeat interval"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which service discovery mechanism is used for Azure virtual machines?",
+        "options": {
+            "A": "azure_sd_configs",
+            "B": "azure_vm_sd_configs",
+            "C": "cloud_sd_configs",
+            "D": "azure_resource_sd_configs"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the deriv() function calculate?",
+        "options": {
+            "A": "The derivative of a gauge over time",
+            "B": "The difference between two counter values",
+            "C": "The rate of change of a histogram",
+            "D": "The average value of a summary"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which parameter controls the maximum number of samples that can be queried at once?",
+        "options": {
+            "A": "query.max_samples",
+            "B": "max_query_samples",
+            "C": "query.sample_limit",
+            "D": "sample_query_limit"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the purpose of metric_relabel_configs in a scrape configuration?",
+        "options": {
+            "A": "To relabel targets before scraping",
+            "B": "To modify labels on metrics after scraping",
+            "C": "To relabel alerts generated from metrics",
+            "D": "To configure labels for service discovery"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which query finds the number of instances where CPU usage exceeds 80%?",
+        "options": {
+            "A": "count(node_cpu_usage_percentage > 80)",
+            "B": "count(node_cpu_usage_percentage{value>80})",
+            "C": "count({name=~\"node_cpu_usage_percentage\", value>80})",
+            "D": "sum(node_cpu_usage_percentage > 80) by (instance)"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the default retention size for Prometheus storage?",
+        "options": {
+            "A": "50GB",
+            "B": "100GB",
+            "C": "No default limit",
+            "D": "200GB"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which Alertmanager configuration defines who receives notifications?",
+        "options": {
+            "A": "receivers",
+            "B": "notifiers",
+            "C": "recipients",
+            "D": "contacts"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the __address__ label represent in Prometheus target labels?",
+        "options": {
+            "A": "The address of the Prometheus server",
+            "B": "The address:port of the target being scraped",
+            "C": "The IP address of the target's host",
+            "D": "The URL path for scraping metrics"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which function calculates the difference between the last two samples of a gauge?",
+        "options": {
+            "A": "delta()",
+            "B": "idelta()",
+            "C": "diff()",
+            "D": "last_delta()"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of annotations in an alerting rule?",
+        "options": {
+            "A": "To add metadata for alert routing",
+            "B": "To provide descriptive information about the alert",
+            "C": "To define the alert severity",
+            "D": "To specify which receiver gets the alert"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which metric type would you use to track the size of files being processed?",
+        "options": {
+            "A": "Counter",
+            "B": "Gauge",
+            "C": "Histogram",
+            "D": "Summary"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What does the query.lookback-delta configuration parameter control?",
+        "options": {
+            "A": "The maximum time to look back for missing samples",
+            "B": "The time range for rate() calculations",
+            "C": "How far back to query historical data",
+            "D": "The delta between consecutive scrapes"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which query calculates the 5-minute error rate ratio for each endpoint?",
+        "options": {
+            "A": "sum(rate(http_requests_total{status=~\"5..\"}[5m])) by (endpoint) / sum(rate(http_requests_total[5m])) by (endpoint)",
+            "B": "rate(http_requests_total{status=~\"5..\"}[5m]) / rate(http_requests_total[5m]) by (endpoint)",
+            "C": "sum(http_requests_total{status=~\"5..\"}) by (endpoint) / sum(http_requests_total) by (endpoint)",
+            "D": "increase(http_requests_total{status=~\"5..\"}[5m]) by (endpoint) / 300"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the default port for the Blackbox Exporter?",
+        "options": {
+            "A": "9115",
+            "B": "9100",
+            "C": "9090",
+            "D": "9211"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which Alertmanager parameter defines the root route for alert routing?",
+        "options": {
+            "A": "root_route",
+            "B": "route",
+            "C": "default_route",
+            "D": "primary_route"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the effect of action: replace in a relabel configuration?",
+        "options": {
+            "A": "Replaces the target with a new one",
+            "B": "Replaces the value of a label based on a regex",
+            "C": "Replaces all labels with new ones",
+            "D": "Replaces the scrape URL for the target"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which function calculates the standard deviation of a metric over a time range?",
+        "options": {
+            "A": "stddev()",
+            "B": "stddev_over_time()",
+            "C": "variance()",
+            "D": "dev_over_time()"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of write_relabel_configs in Prometheus?",
+        "options": {
+            "A": "To relabel metrics before writing to storage",
+            "B": "To relabel targets before scraping",
+            "C": "To relabel alerts before sending to Alertmanager",
+            "D": "To relabel metrics before remote_write"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which metric type should you use to track the current number of pending tasks in a queue?",
+        "options": {
+            "A": "Counter",
+            "B": "Gauge",
+            "C": "Histogram",
+            "D": "Summary"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What does the storage.tsdb.retention.time configuration override?",
+        "options": {
+            "A": "The default block duration",
+            "B": "The default metric retention period",
+            "C": "The maximum storage size",
+            "D": "The WAL truncation duration"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which query finds the 75th percentile of response times for successful requests?",
+        "options": {
+            "A": "histogram_quantile(0.75, sum(rate(http_request_duration_seconds_bucket{status=~\"2..\"}[5m])) by (le))",
+            "B": "quantile(0.75, http_request_duration_seconds{status=~\"2..\"})",
+            "C": "sum(histogram_quantile(0.75, http_request_duration_seconds_bucket{status=~\"2..\"}))[5m]",
+            "D": "rate(histogram_quantile(0.75, http_request_duration_seconds_bucket{status=~\"2..\"})[5m])"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of mute_time_intervals in Alertmanager?",
+        "options": {
+            "A": "Time intervals during which alerts are muted",
+            "B": "Intervals between notification repeats",
+            "C": "Time intervals for which alerts are kept in memory",
+            "D": "Intervals for evaluating inhibit rules"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which service discovery mechanism uses Consul to find targets?",
+        "options": {
+            "A": "consul_sd_configs",
+            "B": "service_sd_configs",
+            "C": "discovery_sd_configs",
+            "D": "consul_service_sd_configs"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which function calculates the number of samples in a time range?",
+        "options": {
+            "A": "count_samples()",
+            "B": "sample_count()",
+            "C": "count_over_time()",
+            "D": "num_samples()"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the purpose of labels in an alerting rule?",
+        "options": {
+            "A": "To provide descriptive information about the alert",
+            "B": "To define routing and grouping for the alert",
+            "C": "To specify the severity of the alert",
+            "D": "To list the instances affected by the alert"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which metric type automatically includes a _count and _sum suffix?",
+        "options": {
+            "A": "Counter",
+            "B": "Gauge",
+            "C": "Histogram",
+            "D": "Both Histogram and Summary"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "What does the remote_timeout configuration parameter control?",
+        "options": {
+            "A": "Timeout for remote_write and remote_read operations",
+            "B": "Timeout for scraping remote targets",
+            "C": "Timeout for Alertmanager notifications",
+            "D": "Timeout for querying remote Prometheus servers"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which query calculates the average number of requests per instance over the last hour?",
+        "options": {
+            "A": "avg(rate(http_requests_total[1h])) by (instance)",
+            "B": "rate(avg(http_requests_total)[1h]) by (instance)",
+            "C": "sum(rate(http_requests_total[1h])) / count(instance)",
+            "D": "avg_over_time(http_requests_total[1h]) by (instance)"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the default evaluation interval for alerting rules?",
+        "options": {
+            "A": "Same as scrape_interval",
+            "B": "1 minute",
+            "C": "30 seconds",
+            "D": "5 minutes"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which Alertmanager receiver type sends notifications via email?",
+        "options": {
+            "A": "email_configs",
+            "B": "smtp_configs",
+            "C": "mail_configs",
+            "D": "notification_email_configs"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the effect of action: hashmod in a relabel configuration?",
+        "options": {
+            "A": "Hashes the target address for load balancing",
+            "B": "Modifies the label value using a hash function",
+            "C": "Distributes targets across scrape groups using a hash",
+            "D": "Hashes sensitive labels for security"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which function calculates the exponential moving average over a time range?",
+        "options": {
+            "A": "ema()",
+            "B": "exp_avg_over_time()",
+            "C": "exponential_avg()",
+            "D": "No built-in function for this"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "What is the purpose of the query_log_file configuration?",
+        "options": {
+            "A": "To log all PromQL queries executed",
+            "B": "To log the results of queries",
+            "C": "To log slow queries",
+            "D": "To log query errors"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which metric type should you use to track the number of bytes transferred over a network?",
+        "options": {
+            "A": "Counter",
+            "B": "Gauge",
+            "C": "Histogram",
+            "D": "Summary"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the tsdb.min-block-duration configuration control?",
+        "options": {
+            "A": "The minimum time a block can exist before being compacted",
+            "B": "The smallest block size allowed",
+            "C": "The minimum duration for which metrics are stored",
+            "D": "The minimum interval between block creations"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which query finds instances where memory usage has increased by more than 20% in the last hour?",
+        "options": {
+            "A": "delta(node_memory_used_bytes[1h]) / node_memory_used_bytes offset 1h > 0.2",
+            "B": "rate(node_memory_used_bytes[1h]) > 0.2",
+            "C": "(node_memory_used_bytes - (node_memory_used_bytes offset 1h)) / (node_memory_used_bytes offset 1h) > 0.2",
+            "D": "increase(node_memory_used_bytes[1h]) > 0.2 * node_memory_used_bytes"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the purpose of resolve_timeout in an Alertmanager route?",
+        "options": {
+            "A": "Overrides the global resolve_timeout for this route",
+            "B": "Sets the timeout for resolving the route",
+            "C": "Defines how long to wait for a response from the receiver",
+            "D": "Specifies the timeout for alert grouping"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which service discovery mechanism is used for Google Cloud Platform instances?",
+        "options": {
+            "A": "gcp_sd_configs",
+            "B": "google_sd_configs",
+            "C": "gce_sd_configs",
+            "D": "cloud_gcp_sd_configs"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which function calculates the median value of a metric over a time range?",
+        "options": {
+            "A": "median()",
+            "B": "median_over_time()",
+            "C": "quantile(0.5, ...)",
+            "D": "middle_over_time()"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What is the purpose of alertmanager.timeout in Prometheus configuration?",
+        "options": {
+            "A": "Timeout for sending alerts to Alertmanager",
+            "B": "Timeout for receiving responses from Alertmanager",
+            "C": "Timeout for Alertmanager health checks",
+            "D": "Maximum time to wait for Alertmanager to start"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which metric type would you use to track the latency of database queries with predefined buckets?",
+        "options": {
+            "A": "Counter",
+            "B": "Gauge",
+            "C": "Histogram",
+            "D": "Summary"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What does the scrape_configs.job_name parameter define?",
+        "options": {
+            "A": "The name of the Prometheus job",
+            "B": "The label value for the job label on scraped metrics",
+            "C": "The name of the process running the scrape",
+            "D": "The name used for logging scrape activities"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which query calculates the 99th percentile of request latency for each service?",
+        "options": {
+            "A": "histogram_quantile(0.99, sum(rate(http_request_duration_seconds_bucket[5m])) by (service, le))",
+            "B": "histogram_quantile(0.99, rate(http_request_duration_seconds_bucket[5m])) by (service)",
+            "C": "quantile(0.99, sum(rate(http_request_duration_seconds[5m])) by (service))",
+            "D": "sum(histogram_quantile(0.99, rate(http_request_duration_seconds_bucket[5m]))) by (service)"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of matchers in an Alertmanager route?",
+        "options": {
+            "A": "To match alerts to the route based on labels",
+            "B": "To match receivers to alerts",
+            "C": "To match time intervals for muting",
+            "D": "To match alert severity levels"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which parameter controls the maximum number of concurrent scrapes?",
+        "options": {
+            "A": "scrape.max_concurrent",
+            "B": "max_concurrent_scrapes",
+            "C": "concurrent_scrape_limit",
+            "D": "scrape.concurrent_limit"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the effect of action: labelmap in a relabel configuration?",
+        "options": {
+            "A": "Maps all labels to new names using a regex",
+            "B": "Creates a new label with values from existing labels",
+            "C": "Maps target addresses to label values",
+            "D": "Maps service discovery metadata to labels"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which function predicts when a gauge will reach a threshold based on current trends?",
+        "options": {
+            "A": "predict_linear()",
+            "B": "threshold_linear()",
+            "C": "trend_estimate()",
+            "D": "forecast_threshold()"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of the rule_files configuration in Alertmanager?",
+        "options": {
+            "A": "There is no such configuration in Alertmanager",
+            "B": "To define alerting rules",
+            "C": "To define routing rules",
+            "D": "To define inhibition rules"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which metric type should you use to track the number of user registrations per minute?",
+        "options": {
+            "A": "Counter",
+            "B": "Gauge",
+            "C": "Histogram",
+            "D": "Summary"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What does the storage.tsdb.wal-compression configuration do?",
+        "options": {
+            "A": "Compresses the write-ahead log to save space",
+            "B": "Compresses old blocks in the TSDB",
+            "C": "Enables compression for remote_write",
+            "D": "Compresses metric labels during storage"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which query calculates the percentage of available disk space on each node?",
+        "options": {
+            "A": "(node_filesystem_avail_bytes / node_filesystem_size_bytes) * 100",
+            "B": "node_filesystem_avail_bytes / node_filesystem_size_bytes * 100",
+            "C": "percent_available(node_filesystem_avail_bytes, node_filesystem_size_bytes)",
+            "D": "100 - (node_filesystem_used_bytes / node_filesystem_size_bytes * 100)"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the purpose of group_by in an Alertmanager route?",
+        "options": {
+            "A": "Groups alerts by specified labels for notification",
+            "B": "Groups routes by receiver",
+            "C": "Groups alerts by severity",
+            "D": "Groups alerts by time of firing"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which service discovery mechanism uses HTTP endpoints to discover targets?",
+        "options": {
+            "A": "http_sd_configs",
+            "B": "api_sd_configs",
+            "C": "web_sd_configs",
+            "D": "endpoint_sd_configs"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Which function calculates the sum of squares of a metric over a time range?",
+        "options": {
+            "A": "sum_squares()",
+            "B": "squares_sum_over_time()",
+            "C": "sum2_over_time()",
+            "D": "sum_sq_over_time()"
+        },
+        "answer": "D"
     }
 ]
