@@ -42,10 +42,10 @@
     {
         "question": "Which query would return the total number of HTTP 500 errors in the last hour?",
         "options": {
-            "A": "sum(increase(http_requests_total{status="500"}[1h]))",
-            "B": "sum(http_requests_total{status="500"})",
-            "C": "rate(http_requests_total{status="500"}[1h])",
-            "D": "count(http_requests_total{status="500"}[1h])"
+            "A": "sum(increase(http_requests_total{status=\"500\"}[1h]))",
+            "B": "sum(http_requests_total{status=\"500\"})",
+            "C": "rate(http_requests_total{status=\"500\"}[1h])",
+            "D": "count(http_requests_total{status=\"500\"}[1h])"
         },
         "answer": "A"
     },
@@ -102,10 +102,10 @@
     {
         "question": "Which query would find the top 3 services by error rate?",
         "options": {
-            "A": "topk(3, sum(rate(http_requests_total{status=~"5.."}[5m])) by (service) / sum(rate(http_requests_total[5m])) by (service))",
-            "B": "sum(rate(http_requests_total{status=~"5.."}[5m])) by (service) | top 3",
-            "C": "top(3, rate(http_requests_total{status=~"5.."}[5m]) by (service))",
-            "D": "max(rate(http_requests_total{status=~"5.."}[5m])) by (service) limit 3"
+            "A": "topk(3, sum(rate(http_requests_total{status=~\"5..\"}[5m])) by (service) / sum(rate(http_requests_total[5m])) by (service))",
+            "B": "sum(rate(http_requests_total{status=~\"5..\"}[5m])) by (service) | top 3",
+            "C": "top(3, rate(http_requests_total{status=~\"5..\"}[5m]) by (service))",
+            "D": "max(rate(http_requests_total{status=~\"5..\"}[5m])) by (service) limit 3"
         },
         "answer": "A"
     },
@@ -395,7 +395,7 @@
             "A": "count(count by (job) (up))",
             "B": "unique_count(up) by (job)",
             "C": "count by (job) (up)",
-            "D": "count_values("job", up)"
+            "D": "count_values(\"job\", up)"
         },
         "answer": "A"
     },
@@ -435,7 +435,7 @@
             "A": "sum(increase(http_requests_total[5m])) by (endpoint)",
             "B": "sum(http_requests_total) by (endpoint)",
             "C": "rate(http_requests_total[5m]) by (endpoint)",
-            "D": "count(http_requests_total{endpoint=~"/.+"}[5m])"
+            "D": "count(http_requests_total{endpoint=~\"/.+\"}[5m])"
         },
         "answer": "A"
     },
@@ -632,10 +632,10 @@
     {
         "question": "Which query would you use to find the percentage of requests that resulted in errors?",
         "options": {
-            "A": "(sum(rate(http_requests_total{status=~"5.."}[5m])) / sum(rate(http_requests_total[5m]))) * 100",
-            "B": "sum(rate(http_requests_total{status=~"5.."}[5m])) / sum(rate(http_requests_total[5m]))",
+            "A": "(sum(rate(http_requests_total{status=~\"5..\"}[5m])) / sum(rate(http_requests_total[5m]))) * 100",
+            "B": "sum(rate(http_requests_total{status=~\"5..\"}[5m])) / sum(rate(http_requests_total[5m]))",
             "C": "error_ratio(http_requests_total) * 100",
-            "D": "count(http_requests_total{status=~"5.."}) / count(http_requests_total) * 100"
+            "D": "count(http_requests_total{status=~\"5..\"}) / count(http_requests_total) * 100"
         },
         "answer": "A"
     },
